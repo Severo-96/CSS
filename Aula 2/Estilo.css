@@ -1,0 +1,21 @@
+#link:visited {
+    color: #aa1313;
+}
+#link:hover {
+    color: #FF00FF;
+}
+#link:active {
+    color: #0000FF;
+}
+.receita span{
+    font-weight: bold;
+    color: #ff0000;
+}
+#newsletter input[type="text"] {
+    color: #9230b9;
+    border-color: darkgreen;
+}
+#newsletter input[type="email"] {
+    color: #000000;
+    border-color: darkgreen;
+}
