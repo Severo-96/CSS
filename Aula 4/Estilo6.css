@@ -1,0 +1,48 @@
+div {
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+ul {
+    height: 20px;
+    width: 50%;
+    text-align: center;
+    background-color: #333333;
+} 
+li, a {
+    display: inline;
+    color: white;
+    padding: 20px;
+}
+.caixa {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#scroll {
+    background-color: rgb(34, 189, 34);
+    overflow: scroll;
+}
+#hidden {
+    background-color: rgb(211, 224, 28);
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    left: 25%;
+}
+#auto {
+    background-color: rgb(36, 101, 221);
+    overflow: auto;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+}
+#visible {
+    background-color: rgb(34, 189, 34);
+    overflow: visible;
+    position: absolute;
+    top: -10px;
+    left: 75%;
+}
