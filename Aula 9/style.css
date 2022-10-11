@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -111,10 +115,12 @@ header {
     padding-top: 5%;
     align-items: center;
     background-image: url(./Imagens/background1.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
     color: transparent;
     overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -663,8 +669,10 @@ img {
     border-top: 1px solid #ebebeb;
     font-weight: 500;
     background-image: url("./Imagens/sector6background.jpeg");
-    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .lateralitlesector6 {
@@ -840,4 +848,20 @@ img {
     margin-bottom: 10px;
     color: #6c6c6c;
     font-size: 14px;
+}
+
+.backtotopbutton {
+    position: fixed;
+    z-index: 99999999;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.849);
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
+    background-image: url(./Imagens/bottonup.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
