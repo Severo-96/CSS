@@ -1,0 +1,64 @@
+* {
+  margin: 5px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+
+}
+
+.box {
+  border: 1px solid black;
+  height: 40vh;
+  width: 30vw;
+}
+
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 100px;
+  text-align: center;
+}
+  
+.dicebox {
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  margin-left: 130px;
+  margin-top: 30px;
+}
+
+.frontface {
+  background-color: blue;
+  transform: translate3d(0, 0, 50px);
+}
+
+.topface {
+  background-color: red;
+  transform: rotateX(90deg) translate3d(0, 0, 50px);
+}
+
+.leftface {
+  background-color: green;
+  transform: rotateY(-90deg) translate3d(0, 0, 50px);
+}
+
+.perspective0 {
+  transform: rotateX(-45deg) rotateY(45deg);
+}
+
+.perspective10 {
+  transform: perspective(10cm) rotateX(-15deg) rotateY(30deg);
+}
+
+.perspective5 {
+  transform: perspective(5cm) rotateX(-15deg) rotateY(30deg);
+}
