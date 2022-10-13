@@ -1,0 +1,158 @@
+:root {
+    --redghost-color: red;
+    --orangeghost-color: orange;
+    --blueghost-color: blue;
+    --pinkghost-color: pink;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 20px 0 20px 0;
+}
+
+.ghost {
+    height: 200px;
+    margin: 25px;
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eye, .eyeBack {
+  position: relative;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.eyeBack {
+    background: #FFF;
+    height: 50px;
+    width: 50px;
+}
+
+.eyeBack:first-child {
+    float: left;
+    margin: 50px 0 0 25px;
+}
+
+.eyeBack:last-child {
+    float: right;
+    margin: 50px 25px 0 0;
+}
+
+.eye {
+  background: #0d2bd7;
+  height: 25px;
+  margin:10%;
+  width: 25px;
+  float: right;
+}
+
+.legs-red {
+    border-right: 38px solid var(--redghost-color);
+    border-left: 38px solid var(--redghost-color);
+    border-bottom: 40px solid transparent;
+    display: block;
+    float: left;
+    height: 100px;
+    width: 0;
+}
+
+.head-red {
+    background-color: var(--redghost-color);
+    height: 100px;
+    position: relative;
+    width: 152px;
+    border-radius: 100px 100px 0 0;
+}
+
+.legs-orange {
+    border-right: 38px solid var(--orangeghost-color);
+    border-left: 38px solid var(--orangeghost-color);
+    border-bottom: 40px solid transparent;
+    display: block;
+    float: left;
+    height: 100px;
+    width: 0;
+}
+
+.head-orange {
+    background-color: var(--orangeghost-color);
+    height: 100px;
+    position: relative;
+    width: 152px;
+    border-radius: 100px 100px 0 0;
+}
+
+.legs-blue {
+    border-right: 38px solid var(--blueghost-color);
+    border-left: 38px solid var(--blueghost-color);
+    border-bottom: 40px solid transparent;
+    display: block;
+    float: left;
+    height: 100px;
+    width: 0;
+}
+
+.head-blue {
+    background-color: var(--blueghost-color);
+    height: 100px;
+    position: relative;
+    width: 152px;
+    border-radius: 100px 100px 0 0;
+}
+
+.legs-pink {
+    border-right: 38px solid var(--pinkghost-color);
+    border-left: 38px solid var(--pinkghost-color);
+    border-bottom: 40px solid transparent;
+    display: block;
+    float: left;
+    height: 100px;
+    width: 0;
+}
+
+.head-pink {
+    background-color: var(--pinkghost-color);
+    height: 100px;
+    position: relative;
+    width: 152px;
+    border-radius: 100px 100px 0 0;
+}
+
+/*Animations begins here!*/
+
+.fadein {
+    animation: fadein 8s linear forwards;
+}
+
+.g1 {
+    animation-delay: 0s;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
